@@ -14,5 +14,8 @@ Embedded code development for the Senior Design project DPLOCK device.
    - **Error Handling** -> Check for situations such as invalid states
    - **Watchdogs** -> For reliability and fault tolerance
    - **Motor Control PWM (MCPWM)** -> For DC servo motor
+
+2. **Key FreeRTOS API References:**
+   [FreeRTOS](https://www.freertos.org/Documentation/RTOS_book.html)
   
 
