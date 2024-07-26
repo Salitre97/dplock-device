@@ -3,7 +3,7 @@ Embedded code development for the Senior Design project DPLOCK device.
 
 ## Development Notes
 
-1. **Key API References:**
+1. **Key ESP-IDF API References:**
    - **Event Loop Library** -> How to handle events
    - **Sleep Modes** -> Enable and disable low power mode
    - **GPIO & RTC GPIO** -> Set directions & pull modes of registers
