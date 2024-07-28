@@ -26,6 +26,8 @@ Embedded code development for the Senior Design project DPLOCK device.
 
 2. **Key FreeRTOS API References:**
    [FreeRTOS](https://www.freertos.org/Documentation/RTOS_book.html)
+
+**Flow Chart**
   
 
 
