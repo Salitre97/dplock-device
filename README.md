@@ -17,6 +17,13 @@ Embedded code development for the Senior Design project DPLOCK device.
 
 **BLE Examples For Reference**
 [gatt_client_walkthrough](https://github.com/espressif/esp-idf/blob/v5.3/examples/bluetooth/bluedroid/ble/gatt_security_client/tutorial/Gatt_Security_Client_Example_Walkthrough.md)
+- Enable hardware interrupts to allow for mcu to wake and collecg data from peripherals.
+- ESP32 will act as a GATT Server for mininmal power consumption and will wait for client (smartphien) to initiate BLE connection.
+- AES-128 enccryption allows for secure data transmission
+- Review ESP-IDF ble examples for implementation.
+
+
+
 2. **Key FreeRTOS API References:**
    [FreeRTOS](https://www.freertos.org/Documentation/RTOS_book.html)
   
