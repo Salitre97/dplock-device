@@ -14,8 +14,9 @@ Embedded code development for the Senior Design project DPLOCK device.
    - **Error Handling** -> Check for situations such as invalid states
    - **Watchdogs** -> For reliability and fault tolerance
    - **Motor Control PWM (MCPWM)** -> For DC servo motor
+
 **BLE Examples For Reference**
-[gatt_client_https://github.com/espressif/esp-idf/blob/v5.3/examples/bluetooth/bluedroid/ble/gatt_security_client/tutorial/Gatt_Security_Client_Example_Walkthrough.md)
+[gatt_client_walkthrough](https://github.com/espressif/esp-idf/blob/v5.3/examples/bluetooth/bluedroid/ble/gatt_security_client/tutorial/Gatt_Security_Client_Example_Walkthrough.md)
 2. **Key FreeRTOS API References:**
    [FreeRTOS](https://www.freertos.org/Documentation/RTOS_book.html)
   
