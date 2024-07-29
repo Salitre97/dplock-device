@@ -3,6 +3,10 @@ Embedded code development for the Senior Design project DPLOCK device.
 
 ## Development Notes
 
+**Tasks to Create with RTOS:**
+- GPIOs (Will log data from peripherals)
+- BLE ( Will scan for clients and transmit data when not in Deep Sleep Mode)
+
 1. **Key ESP-IDF API References:** 
 [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/index.html)
    - **Event Loop Library** -> How to handle events
