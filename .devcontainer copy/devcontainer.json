@@ -1,0 +1,7 @@
+{
+"name": "ESP-IDF",
+"build": {
+        "dockerfile": "Dockerfile"
+},
+"settings"
+}

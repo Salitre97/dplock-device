@@ -1,0 +1,6 @@
+**vscode extension requirements:**
+- Docker
+- Dev Containers
+- Remote development 
+
+Dockerfile tells the container what environment to create.
