@@ -1,21 +1,30 @@
 {
-    "name": "ESP-IDF",
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
-    "settings": {
-        "idf.showOnboardingOnInit": false,
-        "idf.toolsPath": "/opt/esp",
-        "idf.espIdfPath": "/opt/esp/idf",
-        "idf.pythonBinPath": "/opt/esp/python_env/idf5.3_py3.10.12_env/bin/python"
-    },
-    "extensions": [
-        "twx.cmake",
-        "ms-vscode.cpptools"
-    ],
-    "userEnvProbe": "loginInteractiveShell",
-    "runArgs": [
-        "--device=/dev/ttyACM0"
-    ],
-    "remoteUser": "dplock"
+  "name": "ESP-IDF Development Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".",
+    "args": {
+      "DEBIAN_FRONTEND": "noninteractive",
+      "IDF_CLONE_URL": "https://github.com/espressif/esp-idf.git",
+      "IDF_CLONE_BRANCH_OR_TAG": "release/v5.3",
+      "IDF_CHECKOUT_REF": ""
+    }
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "files.eol": "\n",
+    "editor.formatOnSave": true
+  },
+  "extensions": [
+    "ms-vscode.cpptools",
+    "espressif.esp-idf-extension",
+    "ms-vscode.cmake-tools",
+    "ms-python.python",
+    "ms-python.vscode-pylance"
+  ],
+  "postCreateCommand": "source /opt/esp/idf/export.sh",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspaces,type=bind,consistency=cached"
+  ],
+  "remoteUser": "root"  // Set this if you're not using 'vscode' user
 }
