@@ -1,6 +1,19 @@
 # dplock-device
 Embedded code development for the Senior Design project DPLOCK device.
 
+## Prerequisites
+- **Docker:** Docker is required to build and run the project in a containerized environment. Install from website [Docker's official website](https://www.docker.com/get-started).
+
+## Usingg Docker
+If not on VSCode:
+### 1. Build and Run the Docker Image
+
+```bash
+docker build -t dplock-container .
+
+docker run -it -v /path/to/your/local/dplock:/dplock dplock-container
+``` 
+
 ## Development Notes
 
 **Tasks to Create with RTOS:**
