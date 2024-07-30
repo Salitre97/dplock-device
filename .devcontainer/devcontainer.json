@@ -1,0 +1,21 @@
+{
+    "name": "ESP-IDF",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "idf.showOnboardingOnInit": false,
+        "idf.toolsPath": "/opt/esp",
+        "idf.espIdfPath": "/opt/esp/idf",
+        "idf.pythonBinPath": "/opt/esp/python_env/idf5.3_py3.10.12_env/bin/python"
+    },
+    "extensions": [
+        "twx.cmake",
+        "ms-vscode.cpptools"
+    ],
+    "userEnvProbe": "loginInteractiveShell",
+    "runArgs": [
+        "--device=/dev/ttyACM0"
+    ],
+    "remoteUser": "dplock"
+}
